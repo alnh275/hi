@@ -1,0 +1,88 @@
+      body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e3e3e3cb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            color: #023e73;
+        }
+        #container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        #controls {
+            width: 300px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px #023e73;
+            font-size: 14px;
+            height: 600px; 
+        }
+        #controls button, #controls input[type="radio"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #023e73;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 14px;
+        }
+        #controls button:hover {
+            background-color: #79acd9;
+            transform: scale(1.05); 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        } 
+        #output {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 1300px;
+            border: 1px solid #023e73;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 10px #023e73;
+        }
+        #controls label {
+            display: flex;
+            align-items: center;
+        }
+        #controls input[type="radio"] {
+            margin-right:51%;
+        }
+        #controls h3 {
+            margin: 0;
+            color: #023e73;
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+        .tdt{
+            width:200px;
+            margin-left: 31%;
+            margin-top: -6.5%;
+            font-size: 14px;
+        }
+        #graph {
+            flex-grow: 1;
+            height: 620px; 
+            position: relative;
+            background-color: #023e73;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px #023e73;
+        }
+        canvas {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
