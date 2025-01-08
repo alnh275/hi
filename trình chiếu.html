@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THUẬT TOÁN: PRIM VÀ DIJKSTRA</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+
+<body>
+    <h1>THUẬT TOÁN: PRIM VÀ DIJKSTRA</h1>
+
+    <div id="container">
+        <div id="controls">
+            <h3>HƯỚNG DẪN</h3>
+            <p>1. Chọn chức năng để vẽ đỉnh hoặc cạnh.</p>
+            <p>2. Nhấp vào bảng để thêm đỉnh hoặc chọn hai đỉnh để tạo cạnh.</p>
+            <p>3. Chọn đỉnh bắt đầu cho thuật toán.</p>
+            <p>4. Nhấn nút thực hiện để chạy thuật toán và xem kết quả.</p>
+            
+            <h3>ĐIỀU KHIỂN</h3>
+            <button onclick="setMode('addNode')">Vẽ đỉnh</button>
+            <button onclick="setMode('addEdge')">Vẽ cạnh</button>
+            <label>
+                <input type="radio" name="graphType" value="undirected" checked onchange="setGraphType('undirected')">
+            </label>
+            <div class="tdt">Đồ thị vô hướng</div>
+            <label>
+                <input type="radio" name="graphType" value="directed" onchange="setGraphType('directed')">
+            </label>
+            <div class="tdt">Đồ thị có hướng</div>
+            <button onclick="setMode('remove')">Xóa đỉnh/cạnh</button>
+            <button onclick="setMode('selectstart')">Chọn đỉnh bắt đầu</button>
+            <button onclick="runPrim()">Thực hiệc thuật toán Prim</button>
+            <button onclick="runDijkstra()">Thực hiện thuật toán Dijkstra</button>
+            <button onclick="deleteGraph()">Xóa đồ thị</button>
+        </div>
+
+        <div id="graph">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+
+    <div id="output">
+        <h3>Kết quả thuật toán:</h3>
+        <p id="result">Chưa có kết quả.</p>
+    </div>
+    <script src="./c.js"></script>
+</body>
+
+</html> 
